@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Editor extends Component {
-    render() {
-        return (
-            <div>
-                <textarea name="kuch bhi" id="editor" cols="30" rows="10"></textarea>
-            </div>
-        )
-    }
+const Editor = (props) => {
+    return (
+        <div>
+
+            <textarea onChange={props.onChange} value={props.markdown} name="editor" id="editor" cols="80" rows="50"></textarea>
+        </div>
+    )
 }
+
+export default Editor
