@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export default class Toolbar extends Component {
-    render() {
-        return (
-            <div>
-                This is toolbar
-            </div>
-        )
-    }
+const Toolbar = ({title}) => {
+    return (
+        <div>{title}</div>
+    )
 }
+
+export default Toolbar;
