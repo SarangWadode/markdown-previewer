@@ -35,31 +35,47 @@ export default class App extends Component {
   }
 }
 
-const placeholder = `# Markdown Previewer
-___
+const placeholder = `# Welcome to my React Markdown Previewer!
 
-## What is markdown?
-Markdown is a lightweight markup-language, for creating rich text. You can easily create lists, code blocks, headings etc. using markdown.
+## This is a sub-heading...
+### And here's some other cool stuff:
 
-## Basic Syntax
-- Create a list item by just adding a \`-(hyphen)\` at start of the line
-    - You can also create a nested list item
-- Create a **bold text** by surrounding it with \`double *\`, or _italic_ by surrounding with \`_(underscores)\`.
+Heres some code, \`<div></div>\`, between 2 backticks.
 
-- Are you a programmer, and want to add a code Block, here's a way to add a python code block
-py
-# Comment is shown in faint color
-print('Syntax is highlighted as per language specified above')
+\`\`\`
+// this is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://www.freecodecamp.org), and
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+
+Wild Header | Crazy Header | Another Header?
+------------ | ------------- | -------------
+Your content can | be here, and it | can be here....
+And here. | Okay. | I think we get it.
+
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
 
 
-- You can create a [link to another page](https://google.com)
-- Want to insert an image, don't worry add image with just a line as in below
-![A Clock](https://cdn.glitch.com/4b4a34ca-c63e-47d2-ad3f-a615bbf4ddc3%2Fclock.svg?v=1612898725841) ⬅ Image of a clock
+1. And there are numbered lists too.
+1. Use just 1s if you want!
+1. And last but not least, let's not forget embedded images:
 
-> You can look at [Basic Syntax](https://www.markdownguide.org/basic-syntax/) of markdown, if you're complete new, else take a look at [Extended Markdown Guide](https://www.markdownguide.org/extended-syntax/), if you're somewhat familiar with the markdown.
-
-## How this page works?
-- This page uses a third party Library [Marked JS](https://markedjs.org), yo generate html equivalent of the \`raw text\` inputted in this **textbox**
-- For the syntax highlighting purpose, [highlight.js](https://highlightjs.org) is used
-
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
 `;
